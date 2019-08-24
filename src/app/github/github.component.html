@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <app-search-form (searchgit)="searchUser($event)"></app-search-form>
+      <div *ngIf="githubs">
+        <div class="row">
+          <div class="col-md-12">
+            <div *ngFor="let github of githubs">
+              <div class="card">
+                <img src="{{github.avatar_url}}" class="card-image" alt="avatar">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

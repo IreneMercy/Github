@@ -10,9 +10,9 @@
         <div class="col-md-12 text-center">
           <h4 class="mt-5">Search User</h4>
           <div class="box mt-5">
-            <form>
-              <input class="text" type="text" name="search" placeholder="Search...">
-              <input class=" submit" type="submit" name="submit" value="Search">
+            <form class="mt-5" #name="ngForm">
+              <input class="text" type="text" name="search" placeholder="Search..." [(ngModel)]="searchItem">
+              <input class=" submit" type="submit" name="submit" value="Search" (click)="searchUser()">
             </form>
           </div>
         </div>

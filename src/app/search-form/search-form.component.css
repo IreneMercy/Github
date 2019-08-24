@@ -28,7 +28,7 @@ input{
 .text{
   border-radius:25px 0 0 25px;
   background: #fff;
-  width:350px;
+  width:400px;
   height: 50px;
   border: 1px solid Orange;
   padding: 0 25px;
@@ -37,11 +37,12 @@ input{
 .submit{
   position: relative;
   border-radius:0 25px  25px 0;
-  width: 140px;
+  width: 100px;
   height: 50px;
   border: 1px solid Orange;
   outline: none;
   background: #ffc107;
+  color: white;
 
 
 
