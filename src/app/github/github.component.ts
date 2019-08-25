@@ -25,7 +25,6 @@ export class GithubComponent implements OnInit {
        console.log(error)
      }
    )
-   // console.log(searchTerm)
  }
 
 }

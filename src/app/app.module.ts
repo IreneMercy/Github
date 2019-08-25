@@ -7,13 +7,15 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { SearchFormComponent } from './search-form/search-form.component';
 import { GithubComponent } from './github/github.component';
 import { HttpClientModule } from '@angular/common/http';
+import { ReposComponent } from './repos/repos.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     SearchFormComponent,
-    GithubComponent
+    GithubComponent,
+    ReposComponent,
   ],
   imports: [
     BrowserModule,
