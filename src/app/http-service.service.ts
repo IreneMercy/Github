@@ -8,7 +8,7 @@ import { Github } from './github';
   providedIn: 'root'
 })
 export class HttpServiceService {
-  githubs:Github[]=[];
+  gits:Github[]=[];
   constructor(private http:HttpClient) { }
 
   searchProfile(searchItem:string){
@@ -20,13 +20,11 @@ export class HttpServiceService {
       name:string;
       url:string;
     }
-     let searchEndpoint = "https://api.github.com/users/+'searchItem'+?access_token="+environment.apikey;
-     searchEndpoint += "&q=" + searchItem;
-     let promise = new Promise((resolve, reject)=>{
+    let promise =  new Promise((resolve, reject)=>{
        this.http.get<results>('https://api.github.com/users/'+searchItem+'?access_token='+environment.apikey).toPromise().then(
          (results)=>{
-           this.githubs = [];
-           this.githubs.push(results);
+           this.gits = [];
+           this.gits.push(results);
            console.log(results)
            resolve()
          },
@@ -35,7 +33,7 @@ export class HttpServiceService {
            reject()
          }
        )
-     })
-     return promise;
+   })
+   return promise;
 }
 }

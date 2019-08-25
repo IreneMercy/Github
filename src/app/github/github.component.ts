@@ -14,15 +14,18 @@ export class GithubComponent implements OnInit {
   ngOnInit() {
     this.searchUser("IreneMercy")
   }
-  searchUser(searchItem:string){
-    this.httpService.searchProfile(searchItem).then(
-      (results)=>{
-        this.gituser = this.httpService.githubs;
-      },
-      (error)=>{
-        console.log(error)
-      }
-    )
-  }
+  searchUser(searchItem){
+   this.httpService.searchProfile(searchItem).then(
+     ()=>{
+       this.gituser=this.httpService.gits;
+       console.log(this.gituser);
+
+     },
+     (error)=>{
+       console.log(error)
+     }
+   )
+   // console.log(searchTerm)
+ }
 
 }

@@ -12,7 +12,7 @@
           <div class="box mt-5">
             <form class="mt-5" #name="ngForm">
               <input class="text" type="text" name="search" placeholder="Search..." [(ngModel)]="searchItem">
-              <input class=" submit" type="submit" name="submit" value="Search" (click)="searchUser()">
+              <button class="submit" type="submit" name="submit" (click)="search()">Search</button>
             </form>
           </div>
         </div>
