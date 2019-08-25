@@ -19,6 +19,7 @@ export class HttpServiceService {
       html_url:string;
       name:string;
       url:string;
+      followers:number;
     }
     let promise =  new Promise((resolve, reject)=>{
        this.http.get<results>('https://api.github.com/users/'+searchItem+'?access_token='+environment.apikey).toPromise().then(

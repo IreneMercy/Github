@@ -9,3 +9,17 @@
   font-weight: bold;
   font-family: italic;
 }
+.bio{
+  font-family: italic;
+}
+.profile-detail li {
+  list-style-type: none;
+  text-decoration: none;
+  display: inline;
+}
+.profile-detail{
+  margin-top: 3%;
+}
+.profile-detail a{
+  color:skyblue;
+}
