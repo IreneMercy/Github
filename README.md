@@ -24,6 +24,10 @@ Fork the repository On your terminal run the command git clone "project link" On
 **CSS**
 **Bootstrap**
 
+## Dependencies
+**GitHub API**
+**Node.js**
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
