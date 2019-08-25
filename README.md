@@ -14,7 +14,7 @@ Irene Mercy
 
 ## Project Setup
 
-Fork the repository On your terminal run the command git clone "project link" On your terminal, cd Github-Project On tour terminal then run the command code. to open the project on your text editor.
+Fork the repository On your terminal run the command git clone "project link" On your terminal, cd Github-Project On your terminal then run the command code. to open the project on your text editor.
 
 
 ## Technologies Used
