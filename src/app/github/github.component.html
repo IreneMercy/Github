@@ -6,13 +6,20 @@
   </head>
   <body>
     <div class="container-fluid">
-      <app-search-form (searchgit)="searchUser($event)"></app-search-form>
-      <div *ngIf="githubs">
+      <div class="row">
+        <div class="col-md-12">
+          <app-search-form (searchgit)="searchUser($event)"></app-search-form>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid pt-5">
+      <div class="container">
         <div class="row">
-          <div class="col-md-12">
-            <div *ngFor="let github of githubs">
-              <div class="card">
-                <img src="{{github.login}}" alt="login">
+          <div class="col-md-4">
+            <div *ngFor="let github of gituser">
+              <div class="avatar">
+                <img class="avatar" src="{{github.avatar_url}}" alt="login">
+                <p>{{github.login}}</p>
               </div>
             </div>
           </div>
