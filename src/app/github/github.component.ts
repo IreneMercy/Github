@@ -14,13 +14,13 @@ export class GithubComponent implements OnInit {
   ngOnInit() {
     this.searchUser("IreneMercy")
   }
-  searchUser(searchItem){
+  searchUser(searchItem:string){
     this.httpService.searchProfile(searchItem).then(
       (results)=>{
         this.gituser = this.httpService.githubs;
       },
       (error)=>{
-        console.log('error')
+        console.log(error)
       }
     )
   }

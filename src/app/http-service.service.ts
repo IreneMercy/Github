@@ -12,25 +12,30 @@ export class HttpServiceService {
   constructor(private http:HttpClient) { }
 
   searchProfile(searchItem:string){
-    let searchEndpoint="https://api.github.com/users/daneden?access_token=" + environment.apikey;
-    searchEndpoint += "&q=" + searchItem;
-    let promise = new Promise((resolve, reject)=>{
-      this.http.get(searchEndpoint).toPromise().then(
-        (results)=>{
-          this.githubs = [];
-          for(let i=0; i<results["data"].length; i++){
-            let userProfile = results["data"][i]["login"]["avatar_url"];
-            let user = new Github(userProfile);
-            this.githubs.push(user);
-          }
-          console.log(this.githubs);
-          resolve()
-        },
-        (error)=>{
-          console.log(error)
-          reject()
-        }
-      )
-    })
-  }
+    interface results{
+      avatar_url:string;
+      login:string;
+      username:string;
+      html_url:string;
+      name:string;
+      url:string;
+    }
+     let searchEndpoint = "https://api.github.com/users/+'searchItem'+?access_token="+environment.apikey;
+     searchEndpoint += "&q=" + searchItem;
+     let promise = new Promise((resolve, reject)=>{
+       this.http.get<results>('https://api.github.com/users/'+searchItem+'?access_token='+environment.apikey).toPromise().then(
+         (results)=>{
+           this.githubs = [];
+           this.githubs.push(results);
+           console.log(results)
+           resolve()
+         },
+         (error)=>{
+           console.log(error)
+           reject()
+         }
+       )
+     })
+     return promise;
+}
 }

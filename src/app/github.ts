@@ -1,3 +1,3 @@
 export class Github {
-  constructor(login:string, id:number, node_id:string, avatar_url:string, gravatar_id:string, url:string, html_url:string, followers_url:string, following_url:string, gists_url:string, starred_url:string, subscriptions_url:string, repos_url:string, name:string, ){}
+  constructor(avatar_url:string, login:string, username:string, html_url:string, name:string, url:string){}
 }
