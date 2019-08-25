@@ -16,6 +16,14 @@ Irene Mercy
 
 Fork the repository On your terminal run the command git clone "project link" On your terminal, cd Github-Project On tour terminal then run the command code. to open the project on your text editor.
 
+
+## Technologies Used
+**Typescript**
+**Angular Cli**
+**HTML**
+**CSS**
+**Bootstrap**
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
