@@ -12,6 +12,10 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 Irene Mercy
 
+## Project Setup
+
+Fork the repository On your terminal run the command git clone "project link" On your terminal, cd Github-Project On tour terminal then run the command code. to open the project on your text editor.
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
