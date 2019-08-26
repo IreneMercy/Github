@@ -3,6 +3,7 @@ import { Github } from '../github';
 import { DatePipePipe } from '../date-pipe.pipe';
 import { Repo } from '../repo';
 import { HttpServiceService } from '../http-service.service';
+import { SearchFormComponent } from '../search-form/search-form.component';
 
 
 @Component({
@@ -16,7 +17,7 @@ export class ReposComponent implements OnInit {
   constructor(public httpService:HttpServiceService) { }
 
   ngOnInit() {
-    this.searchRepo("IreneMercy")
+    // this.searchRepo("IreneMercy")
   }
   searchRepo(searchItem){
    this.httpService.searchRepos(searchItem).then(
