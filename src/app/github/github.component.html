@@ -31,11 +31,39 @@
               <p class="text-black card-header bg-light">Followers<span class="number">{{github.followers}}</span> </p>
               <p class="text-black card-header bg-light">Following<span class="number">{{github.following}}</span> </p>
               <p class="text-black card-header bg-light">Created On<span class="date">{{github.created_at|date}}</span> </p>
-
             </ul>
+
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12 text-center">
+                <button class="btn btn-warning btn-lg reposi" type="button" name="button"><a href="#repos">Repositories</a></button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
+   <section id="repos">
+     <div class="container card" id="repos">
+       <div *ngFor = 'let arr of httpService.userrepo'>
+         <div class="row">
+           <div class="col-md-4 bg-dark text-white">
+             <p>{{arr.name}}</p>
+             <hr>
+           </div>
+           <div class="col-md-4">
+             <a href="#">{{arr.html_url}}</a>
+
+           </div>
+           <div class="col-md-4">
+             <a href="#">{{arr.description}}</a>
+
+           </div>
+         </div>
+
+       </div>
+     </div>
+   </section>
   </body>
 </html>

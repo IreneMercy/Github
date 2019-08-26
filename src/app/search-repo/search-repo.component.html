@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <!-- <div class="header">
+            <p class="mt-5 header">Search User</p>
+          </div> -->
+          <div class="box">
+            <form class="mt-5 form" #name="ngForm">
+              <input class="text" type="text" name="search" placeholder="Search Repo..." [(ngModel)]="searchItem">
+              <button class="submit" type="submit" name="submit" (click)="repoSearch()">Search</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

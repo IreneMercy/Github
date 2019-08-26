@@ -2,7 +2,7 @@
   background-image: url(../assets/images/bg7.jpg);
   position: center;
   background-size: cover;
-  height: 100vh;
+  height:auto;
   font-family: italic;
 }
 .welcome{

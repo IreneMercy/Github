@@ -9,6 +9,7 @@ import { GithubComponent } from './github/github.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ReposComponent } from './repos/repos.component';
 import { DatePipePipe } from './date-pipe.pipe';
+import { SearchRepoComponent } from './search-repo/search-repo.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { DatePipePipe } from './date-pipe.pipe';
     GithubComponent,
     ReposComponent,
     DatePipePipe,
+    SearchRepoComponent,
   ],
   imports: [
     BrowserModule,

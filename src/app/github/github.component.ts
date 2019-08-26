@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpServiceService } from '../http-service.service';
 import { Github } from '../github';
-import { DatePipePipe } from '../date-pipe.pipe'
+import { DatePipePipe } from '../date-pipe.pipe';
+import { Repo } from '../repo';
 
 @Component({
   selector: 'app-github',
@@ -10,10 +11,12 @@ import { DatePipePipe } from '../date-pipe.pipe'
 })
 export class GithubComponent implements OnInit {
   gituser:Github[];
+  gitrepository:Repo;
   constructor(public httpService:HttpServiceService) { }
 
   ngOnInit() {
     this.searchUser("IreneMercy")
+    this.searchRepo("IreneMercy")
   }
   searchUser(searchItem){
    this.httpService.searchProfile(searchItem).then(
@@ -25,7 +28,19 @@ export class GithubComponent implements OnInit {
      (error)=>{
        console.log(error)
      }
-   )
- }
+   )}
+   searchRepo(searchItem){
+     this.httpService.searchRepos(searchItem).then(
+       ()=>{
+         this.gitrepository=this.httpService.userrepo;
+         console.log(this.gitrepository);
+       },
+       (error)=>{
+         console.log(error)
+       }
+     )
+   }
+
+
 
 }

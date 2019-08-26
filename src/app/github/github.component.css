@@ -35,3 +35,20 @@
 .date{
   margin-left: 15%;
 }
+.repos{
+  display: inline;
+}
+#repos{
+  margin-top: 15%;
+}
+.reposi{
+  border-radius:25px  25px;
+  color: white;
+  font-weight: bold;
+  font-family: italic;
+  font-size: 20px;
+}
+.reposi a{
+  list-style-type: none;
+  text-decoration-line: none;
+}

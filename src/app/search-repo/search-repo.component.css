@@ -1,6 +1,6 @@
 
 .container{
-  margin-top:5%;
+  paddin-top:5%;
 }
 h4{
   margin: 0 0 10px;
@@ -38,7 +38,6 @@ input{
   padding: 0 25px;
   outline: none;
   background: transparent;
-  color: #ffff;
 }
 .submit{
   position: relative;
@@ -49,4 +48,7 @@ input{
   outline: none;
   background: #ffc107;
   color: white;
+}
+.form{
+  margin-top: 3px;
 }
