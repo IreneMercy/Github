@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpServiceService } from '../http-service.service';
 import { Github } from '../github';
+import { DatePipePipe } from '../date-pipe.pipe'
 
 @Component({
   selector: 'app-github',

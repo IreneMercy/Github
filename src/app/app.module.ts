@@ -8,6 +8,7 @@ import { SearchFormComponent } from './search-form/search-form.component';
 import { GithubComponent } from './github/github.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ReposComponent } from './repos/repos.component';
+import { DatePipePipe } from './date-pipe.pipe';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { ReposComponent } from './repos/repos.component';
     SearchFormComponent,
     GithubComponent,
     ReposComponent,
+    DatePipePipe,
   ],
   imports: [
     BrowserModule,

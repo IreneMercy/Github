@@ -5,13 +5,15 @@
     <title></title>
   </head>
   <body>
-    <div class="container pt-5">
+    <div class="container">
       <div class="row">
         <div class="col-md-12 text-center">
-          <h4 class="mt-5">Search User</h4>
-          <div class="box mt-5">
-            <form class="mt-5" #name="ngForm">
-              <input class="text" type="text" name="search" placeholder="Search..." [(ngModel)]="searchItem">
+          <!-- <div class="header">
+            <p class="mt-5 header">Search User</p>
+          </div> -->
+          <div class="box">
+            <form class="mt-5 form" #name="ngForm">
+              <input class="text" type="text" name="search" placeholder="Search User..." [(ngModel)]="searchItem">
               <button class="submit" type="submit" name="submit" (click)="search()">Search</button>
             </form>
           </div>

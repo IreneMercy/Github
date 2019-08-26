@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title></title>
   </head>
-  <body>
+  <body class="user">
     <div class="container-fluid">
       <div class="row">
         <div class="col-md-12">
@@ -12,25 +12,26 @@
         </div>
       </div>
     </div>
-    <div class="container-fluid pt-5">
-      <div class="container">
+    <div class="container-fluid mt-5">
+      <div class="container-fluid">
         <div *ngFor="let github of gituser" class="row">
           <div class="col-md-4">
             <div>
               <div class="avatar">
                 <img class="avatar" src="{{github.avatar_url}}" alt="login">
-                <h3 class="login">{{github.login}}</h3>
-                <p class="bio">{{github.bio}}</p>
-                <p class="bio">{{github.location}}</p>
+                <h3 class="login text-white">{{github.login}}</h3>
+                <p class="bio text-white">{{github.bio}}</p>
+                <p class="bio text-white">{{github.location}}</p>
               </div>
             </div>
           </div>
           <div class="col-md-8">
             <ul class="profile-detail">
-              <!-- <li class="nav-link-active"><a href="#">Overview</a> </li> -->
-              <li class="nav-link"><a href="#">Repositories</a> {{github.public_repos}}</li>
-              <li class="nav-link"><a href="#">Followers</a> {{github.followers}}</li>
-              <li class="nav-link"><a href="#">Following</a> {{github.following}}</li>
+              <p class="text-black card-header bg-light">Repositories<span class="numbers">{{github.public_repos}}</span> </p>
+              <p class="text-black card-header bg-light">Followers<span class="number">{{github.followers}}</span> </p>
+              <p class="text-black card-header bg-light">Following<span class="number">{{github.following}}</span> </p>
+              <p class="text-black card-header bg-light">Created On<span class="date">{{github.created_at|date}}</span> </p>
+
             </ul>
           </div>
         </div>

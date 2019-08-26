@@ -1,3 +1,6 @@
+.user{
+  background-color: transparent;
+}
 .avatar{
   width:80%;
   height:90%;
@@ -15,11 +18,20 @@
 .profile-detail li {
   list-style-type: none;
   text-decoration: none;
-  display: inline;
+  display:block;
 }
 .profile-detail{
-  margin-top: 3%;
+  margin-top:5%;
 }
 .profile-detail a{
   color:skyblue;
+}
+.number{
+  margin-left: 20%;
+}
+.numbers{
+  margin-left: 16%;
+}
+.date{
+  margin-left: 15%;
 }
